@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Kdam+Thmor+Pro&display=swap');
 @font-face {
     font-family: 'Cascadia Code';
-    src: url('cascadia-code/CascadiaCode-Regular-VTT.ttf') format('truetype');
+    src: url('../cascadia-code/CascadiaCode-Regular-VTT.ttf') format('truetype');
 }
 
 :root {
@@ -14,7 +14,7 @@
     --grey: #302B2F;
     --light-black: #100B0F;
     /*Fonts*/
-    --title: 'Cascadia Code';
+    --title: 'Cascadia Code', monospace;
     --menu: 'Courier Prime';
     --text: 'Kdam Thmor Pro';
 }
