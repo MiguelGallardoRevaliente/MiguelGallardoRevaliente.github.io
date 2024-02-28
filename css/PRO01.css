@@ -102,7 +102,7 @@ nav li:hover a {
     max-width: 240px;
     margin-right: 20px;
     animation: start 2s 0s forwards;
-    border: 1px solid var(--light);
+    border: 2px solid var(--light);
 }
 
 #about .container .nom .titol {
@@ -113,11 +113,13 @@ nav li:hover a {
     margin: 0;
     font-family: var(--title);
     font-size: 1.2  em;
+    color: var(--light-red);
     animation: start 2s 1s forwards;
 }
 
 #about .container .nom .titol h1 {
     font-family: var(--title);
+    color: var(--light-red);
     font-size: 6em;
     margin: 0;
     animation: start 2s 0.5s forwards;
@@ -127,7 +129,7 @@ nav li:hover a {
     margin-top: 50px;
     margin-bottom: 50px;
     width: 500px;
-    border: 1px solid var(--dark-red);
+    border: 1px solid var(--light-red);
     animation: start 2s 1.2s forwards;
 }
 
@@ -136,7 +138,7 @@ nav li:hover a {
     align-items: center;
     justify-content: center;
     font-family: var(--text);
-    font-size: 0.8em;
+    font-size: 0.9em;
     width: 700px;
     text-align: justify;
     color: var(--light);
@@ -155,6 +157,7 @@ nav li:hover a {
 
 #languages .container h1 {
     font-family: var(--title);
+    color: var(--light-red);
     font-size: 3.5em;
     margin-bottom: 0;
 }
@@ -163,7 +166,7 @@ nav li:hover a {
     margin-top: 50px;
     margin-bottom: 50px;
     width: 150px;
-    border: 1px solid var(--dark-red);
+    border: 1px solid var(--light-red);
 }
 
 #languages .container .languages_p {
@@ -214,6 +217,7 @@ nav li:hover a {
 
 #projects .container h1 {
     font-family: var(--title);
+    color: var(--light-red);
     font-size: 3.5em;
 }
 
@@ -221,7 +225,7 @@ nav li:hover a {
     margin-top: 20px;
     margin-bottom: 60px;
     width: 150px;
-    border: 1px solid var(--dark-red);
+    border: 1px solid var(--light-red);
 }
 
 * {box-sizing:border-box}
@@ -377,7 +381,7 @@ footer {
 
 .contact p {
     font-size: 1.5em;
-    color: var(--normal-red);
+    color: var(--light-red);
     font-family: var(--title);
     font-weight: bold;
 }
