@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Kdam+Thmor+Pro&display=swap');
+
+:root {
+    --dark: #1b1b1b;
+    --light: #fafafa;
+    /*Paleta de colores*/
+    --light-red: #C43A37;
+    --normal-red: #B22B29;
+    --dark-red: #A21F1E;
+    --grey: #302B2F;
+    --light-black: #100B0F;
+    /*Fonts*/
+    --title: 'Cascadia Code';
+    --menu: 'Courier Prime';
+    --text: 'Kdam Thmor Pro';
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body {
+    background-color: #000000;
+    color: var(--dark-red);
+    overflow-x: hidden;
+}
+
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav {
+    font-family: var(--menu);
+    position: fixed;
+    z-index: 2;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 11% 99%);
+    margin: 0;
+    padding-left: 10px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+nav li {
+    margin-right: 15px;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--light);
+    transition: all 0.5s ease;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+}
+
+nav li:hover a {
+    color: var(--light-red);
+    text-decoration: underline;
+}
+
+.scrolled {
+    background-color: #302b2f56;
+}
+
+/* DIV ABOUT ME */
+
+#about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    animation: start 1s forwards;
+}
+
+#about .container .nom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .container .nom img {
+    border-radius: 100%;
+    max-width: 240px;
+    margin-right: 20px;
+    animation: start 2s 0s forwards;
+}
+
+#about .container .nom .titol {
+    margin-left: 20px;
+}
+
+#about .container .nom .titol p {
+    margin: 0;
+    font-family: var(--title);
+    font-size: 1.2  em;
+    animation: start 2s 1s forwards;
+}
+
+#about .container .nom .titol h1 {
+    font-family: var(--title);
+    font-size: 6em;
+    margin: 0;
+    animation: start 2s 0.5s forwards;
+}
+
+#about .container hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 500px;
+    border: 1px solid var(--dark-red);
+    animation: start 2s 1.2s forwards;
+}
+
+#about .container .text_personal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--text);
+    font-size: 0.8em;
+    width: 700px;
+    text-align: justify;
+    color: var(--light);
+    animation: start 2s 1.5s forwards;
+}
+
+/* DIV LANGUAGES */
+
+#languages .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px; 
+}
+
+#languages .container h1 {
+    font-family: var(--title);
+    font-size: 3.5em;
+    margin-bottom: 0;
+}
+
+#languages .container hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 150px;
+    border: 1px solid var(--dark-red);
+}
+
+#languages .container .languages_p {
+    font-family: var(--text);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+
+#languages .container .languages_p img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#languages .container .languages_p div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 150px;
+    margin-top: 0;
+    padding: 20px;
+    margin: 10px;
+    transition: all 0.5s ease;
+}
+
+#languages .container .languages_p div:hover {
+    background-image: linear-gradient(0deg, var(--grey) 0%, var(--dark-red) 100%);
+    color: white;
+    border: 1px solid var(--light);
+    transform: scale(1.1);
+    animation: bg 2s linear infinite;
+}
+
+/* DIV PROJECTS */
+
+#projects .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px; 
+    margin-bottom: 100px;
+}
+
+#projects .container h1 {
+    font-family: var(--title);
+    font-size: 3.5em;
+}
+
+#projects .container hr {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    width: 150px;
+    border: 1px solid var(--dark-red);
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin-top: 0;
+}
+
+.slideshow-container img {
+    border: 3px solid var(--grey);
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    transition: all 0.5s ease;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.mySlides:hover img {
+    opacity: 0.3;
+}
+
+.mySlides:hover .text, .mySlides:hover .descripcio, 
+.mySlides:hover .text, .mySlides:hover .goTo {
+    display: block;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev {
+    left: 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: var(--normal-red);
+}
+
+.descripcio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--light);
+    font-size: 0.8em;
+    font-family: var(--text);
+    display: none;
+    text-align: center;
+}
+
+.goTo {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #a21e1e7e;
+    padding: 5px;
+    color: var(--light);
+    text-decoration: none;
+    font-family: var(--text);
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: none;
+}
+
+.goTo:hover {
+    background-color: var(--normal-red);
+}
+
+.text {
+  color: var(--normal-red);
+  font-family: var(--text);
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s easexº;
+  display: none;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--light-black);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: var(--normal-red);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+    font-family: var(--menu);
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.contact p {
+    font-size: 1.5em;
+    color: var(--normal-red);
+    font-family: var(--title);
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input {
+    width: 500px;
+    height: 30px;
+    margin: 10px;
+    padding: 5px;
+    background-color: var(--light);
+    color: var(--dark-red);
+    font-family: var(--text);
+    font-size: 0.7em;
+    border: none;
+}
+
+.contact input:focus {
+    outline: none;
+}
+
+.contact textarea {
+    resize: none;
+    width: 500px;
+    height: 60px;
+    margin: 10px;
+    padding: 5px;
+    background-color: var(--light);
+    color: var(--dark-red);
+    font-family: var(--text);
+    border: none;
+    font-size: 0.7em;
+}
+
+.contact textarea:focus {
+    outline: none;
+}
+
+.contact button {
+    background: transparent;
+    border: none;
+    color: var(--light-red);
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.5s ease;
+    align-self: flex-end;
+}
+
+.contact button:hover {
+    color: var(--dark-red);
+    transform: scale(1.1);
+}
+
+.contact small {
+    font-size: 0.6em;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+}
+
+.social li{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.social a{
+    color: var(--light);
+	text-decoration: none;
+    margin-right: 10px;
+	font-size: 1.3em;
+    transition: all 0.5s ease;
+}
+
+.social li:hover{
+    transform: scale(1.1);
+}
+
+.social li:hover a{
+	color: var(--light-red);
+}
+
+
+@media (max-width: 768px) {
+    #about .container .nom img {
+        max-width: 200px;
+    }
+
+    #about .container .nom .titol h1 {
+        font-size: 4em;
+    }
+
+    #about .container hr {
+        width: 300px;
+    }
+
+    #about .container .text_personal {
+        width: 500px;
+    }
+
+    #languages .container .languages_p {
+        width: 500px;
+    }
+
+    #projects .container .slideshow-container {
+        max-width: 700px;
+    }
+
+    #projects .container .slideshow-container img {
+        width: 500px;
+        height: 300px;
+    }
+
+    #projects .container .mySlides img {
+        width: 500px;
+        height: 300px;
+    }
+
+    #projects .container .prev, .next {
+        font-size: 15px;
+    }
+
+    #projects .container .text {
+        font-size: 12px;
+    }
+
+    #projects .container .descripcio {
+        font-size: 12px;
+    }
+
+    #projects .container .goTo {
+        font-size: 0.7em;
+        top: 75%;
+    }
+
+    .contact input {
+        width: 350px;
+    }
+
+    .contact textarea {
+        width: 350px;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 425px) {
+    nav {
+        font-family: var(--menu);
+        position: fixed;
+        z-index: 2;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 11% 99%);
+        width: 65%;
+        margin: 0;
+        padding: 0;
+        font-size: 0.5em;
+        background-color: transparent;
+        transition: background-color 0.3s ease;
+    }
+
+    nav ul {
+        padding-left: 30px;
+    }
+    
+    nav li {
+        margin-right: 5px;
+        display: inline-block;
+        transition: all 0.5s ease;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: var(--light);
+        transition: all 0.5s ease;
+    }
+    
+    nav li:hover {
+        transform: scale(1.1);
+    }
+    
+    nav li:hover a {
+        color: var(--light-red);
+        text-decoration: underline;
+    }
+    
+    #about .container .nom img {
+        max-width: 120px;
+        margin: 0;
+    }
+
+    #about .container .nom .titol h1 {
+        font-size: 2.5em;
+    }
+
+    #about .container .nom .titol p {
+        font-size: 0.7em;
+    }
+
+    #about .container hr {
+        width: 200px;
+    }
+
+    #about .container .text_personal {
+        width: 300px;
+        font-size: 0.6em;
+    }
+
+    #languages .container .languages_p {
+        width: 300px;
+    }
+
+    #projects .container .slideshow-container {
+        max-width: 300px;
+    }
+    
+    #projects .container .slideshow-container img {
+        width: 300px;
+        height: 200px;
+    }
+
+    #projects .container .mySlides img {
+        width: 300px;
+        height: 200px;
+    }
+
+    #projects .container .prev, .next {
+        font-size: 12px;
+    }
+
+    #projects .container .text {
+        font-size: 10px;
+    }
+
+    #projects .container .descripcio {
+        font-size: 10px;
+    }
+
+    #projects .container .goTo {
+        font-size: 0.5em;
+        top: 75%;
+    }
+
+    .contact input {
+        width: 200px;
+    }
+
+    .contact textarea {
+        width: 200px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}

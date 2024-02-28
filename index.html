@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafoli</title>
+    <link rel="stylesheet" href="css/PRO01.css">
+    <link rel="stylesheet" href="http://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+    <link rel="icon" href="imatges/charmander_con_flow.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header id="home">
+        <nav id="navbar">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <sec id="about">
+        <div class="container">
+            <div data-aos="fade-down" data-aos-duration="1000" class="nom">
+                <img src="imatges/foto_personal.jpeg">
+                <div class="titol">
+                    <h1>MIGUEL<br>GALLARDO</h1>
+                    <p>Web Dessigner & Developer</p>
+                </div>
+            </div>
+            <hr data-aos="fade-down" data-aos-duration="1000">
+            <div data-aos="fade-down" data-aos-duration="1000" class="text_personal">
+                <p>
+                    Greetings! I'm Miguel Gallardo, a Web Designer and Developer born in 2004. Currently enrolled in the Web Application Development (DAW) program at Jaume Viladoms, I've been captivated by web design since an early age. With a blend of creativity and technical prowess, I embark on each project with dedication to excellence. My journey is driven by a relentless pursuit of innovation and a commitment to exceeding client expectations. Let's collaborate and transform your web visions into realities!
+                </p>
+            </div>
+        </div>
+    </sec>
+    <sec id="languages">
+        <div class="container">
+            <h1 data-aos="fade">LANGUAGES</h1>
+            <hr>
+            <div class="languages_p">
+                <div data-aos="zoom-out-right" class="js">
+                    <img src="imatges/js.png">
+                    <p>JavaScript</p>
+                </div>
+                <div data-aos="zoom-out" class="css">
+                    <img src="imatges/CSS.png">
+                    <p>CSS</p>
+                </div>
+                <div data-aos="zoom-out" class="html">
+                    <img src="imatges/HTML.png">
+                    <p>HTML</p>
+                </div>
+                <div data-aos="zoom-out-left" class="c">
+                    <img src="imatges/c++.png">
+                    <p>C++</p>
+                </div>
+                <div data-aos="zoom-out-right" class="java">
+                    <img src="imatges/java.png">
+                    <p>Java</p>
+                </div>
+                <div data-aos="zoom-out" class="python">
+                    <img src="imatges/Python.png">
+                    <p>Python</p>
+                </div>
+                <div data-aos="zoom-out" class="php">
+                    <img src="imatges/php.png">
+                    <p>PHP</p>
+                </div>
+                <div data-aos="zoom-out-left" class="mysql">
+                    <img src="imatges/MySQL.png">
+                    <p>MySQL</p>
+                </div>
+            </div>
+        </div>
+    </sec>
+    <sec id="projects">
+        <div class="container">
+            <h1 data-aos="fade">MY PROJECTS</h1>
+            <hr>
+            <div data-aos="flip-left" data-aos-duration="1000" class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="imatges/Chamous.png">
+                    <div class="descripcio">School management page, with a section of teachers and another of students, made with HTML, CSS and PHP.</div>
+                    <a href="https://github.com/MiguelGallardoRevaliente" class="goTo">Go to Chamous</a>
+                    <div class="text">Chamous</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="imatges/estiled-form.png">
+                    <div class="descripcio">Stylish form, made with HTML and CSS.</div>
+                    <a href="https://github.com/MiguelGallardoRevaliente" class="goTo">Go to Form</a>
+                    <div class="text">Estiled Form</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="imatges/Hotel.png">
+                    <div class="descripcio">Page for hotel room booking, made with HTML, CSS and JS.</div>
+                    <a href="https://github.com/MiguelGallardoRevaliente" class="goTo">Go to Hotel Chimpy</a>
+                    <div class="text">Hotel Chimpy</div>
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </sec> 
+    <footer>
+        <div class="contact" id="contact" data-aos="fade-in">            
+            <p>CONTACT ME</p>
+            <form>
+                <input type="email" placeholder="Your email here...">
+                <textarea placeholder="Your message here..."></textarea>
+                <button type="submit"><i class='bx bx-send'></i></button>
+            </form>
+            <small>Send this text to me</small>
+        </div>
+        <p>Miguel Gallardo Revaliente &COPY;</p>
+        <ul class="social" id="social1">
+            <li><a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a></li>
+            <li><a href="https://twitter.com"><i class='bx bxl-twitter'></i></a></li>
+            <li><a href="https://www.linkedin.com/in/miguel-gallardo-revaliente-84b332273/"><i class='bx bxl-linkedin-square'></i></a></li>
+            <li><a href="https://github.com/MiguelGallardoRevaliente"><i class='bx bxl-github'></i></a></li>
+        </ul>
+    </footer>
+    <!-- Particles JS -->
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- JS standard -->
+    <script src="js/PRO01.js"></script>
+</body>
+</html>
