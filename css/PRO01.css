@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Kdam+Thmor+Pro&display=swap');
 @font-face {
     font-family: 'Cascadia Code';
-    src: url('../cascadia-code/CascadiaCode-Regular-VTT.ttf') format('truetype');
+    src: url('../cascadia-code-cufonfonts-webfont/Cascadia.woff') format('truetype');
 }
 
 :root {
