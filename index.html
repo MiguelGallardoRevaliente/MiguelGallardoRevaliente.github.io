@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="css/PRO01.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
     <link rel="icon" href="imatges/charmander_con_flow.png">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
 </head>
 <body>
     <div id="particles-js"></div>
     <header id="home">
         <nav id="navbar">
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#languages">Languages</a></li>
-                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#home">Home</a></li>
+                <li onclick="goAboutMe()"><a href="#about">About Me</a></li>
+                <li onclick="goLanguages()"><a href="#languages">Languages</a></li>
+                <li onclick="goProjects()"><a href="#projects">My Projects</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
     </header>
-    <sec id="about">
+    <sec id="home">
         <div class="container">
             <div data-aos="fade-down" data-aos-duration="1000" class="nom">
                 <img src="imatges/foto_personal.jpeg">
@@ -30,7 +31,12 @@
                     <p>Web Dessigner & Developer</p>
                 </div>
             </div>
-            <hr data-aos="fade-down" data-aos-duration="1000">
+        </div>
+    </sec>
+    <sec id="about">
+        <div class="container">
+            <h1 data-aos="fade">ABOUT ME</h1>
+            <hr>
             <div data-aos="fade-down" data-aos-duration="1000" class="text_personal">
                 <p>
                     Greetings! I'm Miguel Gallardo, a Web Designer and Developer born in 2004. Currently enrolled in the Web Application Development (DAW) program at Jaume Viladoms, I've been captivated by web design since an early age. With a blend of creativity and technical prowess, I embark on each project with dedication to excellence. My journey is driven by a relentless pursuit of innovation and a commitment to exceeding client expectations. Let's collaborate and transform your web visions into realities!
@@ -139,7 +145,7 @@
     <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script>
     <!-- AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>

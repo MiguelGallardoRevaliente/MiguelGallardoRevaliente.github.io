@@ -14,9 +14,8 @@
     --grey: #302B2F;
     --light-black: #100B0F;
     /*Fonts*/
-    --title: 'Cascadia Code', monospace, Verdana;
+    --text: 'Cascadia Code', monospace, Verdana;
     --menu: 'Courier Prime';
-    --text: 'Kdam Thmor Pro';
 }
 
 html, body {
@@ -80,9 +79,9 @@ nav li:hover a {
     background-color: #302b2f56;
 }
 
-/* DIV ABOUT ME */
+/* DIV HOME */
 
-#about .container {
+#home .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,46 +90,58 @@ nav li:hover a {
     animation: start 1s forwards;
 }
 
-#about .container .nom {
+#home .container .nom {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#about .container .nom img {
+#home .container .nom img {
     border-radius: 100%;
     max-width: 240px;
     margin-right: 20px;
     animation: start 2s 0s forwards;
-    border: 2px solid var(--light);
+    border: 1px solid var(--light);
 }
 
-#about .container .nom .titol {
+#home .container .nom .titol {
     margin-left: 20px;
 }
 
-#about .container .nom .titol p {
+#home .container .nom .titol p {
     margin: 0;
-    font-family: var(--title);
+    font-family: var(--text);
     font-size: 1.2  em;
-    color: var(--light-red);
     animation: start 2s 1s forwards;
 }
 
-#about .container .nom .titol h1 {
-    font-family: var(--title);
-    color: var(--light-red);
+#home .container .nom .titol h1 {
+    font-family: var(--text);
     font-size: 6em;
     margin: 0;
     animation: start 2s 0.5s forwards;
 }
 
+/* DIV ABOUR ME */
+
+#about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about .container h1 {
+    font-family: var(--text);
+    font-size: 3.5em;
+    margin-bottom: 0;
+}
+
 #about .container hr {
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 500px;
-    border: 1px solid var(--light-red);
-    animation: start 2s 1.2s forwards;
+    width: 150px;
+    border: 1px solid var(--dark-red);
 }
 
 #about .container .text_personal {
@@ -138,7 +149,7 @@ nav li:hover a {
     align-items: center;
     justify-content: center;
     font-family: var(--text);
-    font-size: 0.9em;
+    font-size: 0.8em;
     width: 700px;
     text-align: justify;
     color: var(--light);
@@ -147,17 +158,19 @@ nav li:hover a {
 
 /* DIV LANGUAGES */
 
+#languages {
+    display: none;
+}
+
 #languages .container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 100px; 
 }
 
 #languages .container h1 {
-    font-family: var(--title);
-    color: var(--light-red);
+    font-family: var(--text);
     font-size: 3.5em;
     margin-bottom: 0;
 }
@@ -166,7 +179,7 @@ nav li:hover a {
     margin-top: 50px;
     margin-bottom: 50px;
     width: 150px;
-    border: 1px solid var(--light-red);
+    border: 1px solid var(--dark-red);
 }
 
 #languages .container .languages_p {
@@ -206,18 +219,19 @@ nav li:hover a {
 
 /* DIV PROJECTS */
 
+#projects {
+    display: none;
+}
+
 #projects .container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 200px; 
-    margin-bottom: 100px;
 }
 
 #projects .container h1 {
-    font-family: var(--title);
-    color: var(--light-red);
+    font-family: var(--text);
     font-size: 3.5em;
 }
 
@@ -225,7 +239,7 @@ nav li:hover a {
     margin-top: 20px;
     margin-bottom: 60px;
     width: 150px;
-    border: 1px solid var(--light-red);
+    border: 1px solid var(--dark-red);
 }
 
 * {box-sizing:border-box}
@@ -368,7 +382,7 @@ footer {
     color: var(--light);
     font-family: var(--menu);
     font-size: 1.2em;
-    margin-top: 20px;
+    margin-top: 120px;
 }
 
 .contact {
@@ -381,8 +395,8 @@ footer {
 
 .contact p {
     font-size: 1.5em;
-    color: var(--light-red);
-    font-family: var(--title);
+    color: var(--normal-red);
+    font-family: var(--text);
     font-weight: bold;
 }
 
@@ -480,11 +494,11 @@ form {
 
 
 @media (max-width: 768px) {
-    #about .container .nom img {
+    #home .container .nom img {
         max-width: 200px;
     }
 
-    #about .container .nom .titol h1 {
+    #home .container .nom .titol h1 {
         font-size: 4em;
     }
 
@@ -583,16 +597,16 @@ form {
         text-decoration: underline;
     }
     
-    #about .container .nom img {
+    #home .container .nom img {
         max-width: 120px;
         margin: 0;
     }
 
-    #about .container .nom .titol h1 {
+    #home .container .nom .titol h1 {
         font-size: 2.5em;
     }
 
-    #about .container .nom .titol p {
+    #home .container .nom .titol p {
         font-size: 0.7em;
     }
 

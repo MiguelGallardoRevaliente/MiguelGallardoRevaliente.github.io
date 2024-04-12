@@ -2,14 +2,14 @@ particlesJS(
     {
         "particles": {
           "number": {
-            "value": 6,
+            "value": 9,
             "density": {
               "enable": true,
               "value_area": 800
             }
           },
           "color": {
-            "value": "#A21F1E"
+            "value": "#b22b29"
           },
           "shape": {
             "type": "polygon",
@@ -37,7 +37,7 @@ particlesJS(
             }
           },
           "size": {
-            "value": 115,
+            "value": 130,
             "random": false,
             "anim": {
               "enable": true,

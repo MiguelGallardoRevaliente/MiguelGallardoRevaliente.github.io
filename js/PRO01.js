@@ -36,3 +36,25 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('scrolled'); // Quitar la clase cuando se vuelve a la parte superior
     }
 });
+
+const aboutMe = document.getElementById('about');
+const languages = document.getElementById('languages'); 
+const projects = document.getElementById('projects');
+
+function goAboutMe () {
+  aboutMe.style.display = 'block';
+  languages.style.display = 'none';
+  projects.style.display = 'none';
+} 
+
+function goLanguages () {
+  aboutMe.style.display = 'none';
+  languages.style.display = 'block';
+  projects.style.display = 'none';
+}
+
+function goProjects () {
+  aboutMe.style.display = 'none';
+  languages.style.display = 'none';
+  projects.style.display = 'block';
+}
